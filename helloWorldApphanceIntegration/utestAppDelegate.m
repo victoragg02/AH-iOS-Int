@@ -20,6 +20,8 @@
     }
     
     [APHLogger startNewSessionWithApplicationKey:@"9e1a09e590d85d60eaa1781c14ed297065a464ec" apphanceMode:kAPHApphanceModeQA];
+    
+    NSSetUncaughtExceptionHandler(&APHUncaughtExceptionHandler);
     return YES;
 }
 							
