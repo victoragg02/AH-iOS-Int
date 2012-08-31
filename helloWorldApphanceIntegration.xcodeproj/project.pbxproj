@@ -22,6 +22,7 @@
 		BDD6FA0515F0BCF400AB9E2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */; };
 		BDD6FA0D15F0BCF400AB9E2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FA0B15F0BCF400AB9E2F /* InfoPlist.strings */; };
 		BDD6FA1015F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD6FA0F15F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.m */; };
+		BDD6FA2215F0CB4E00AB9E2F /* Apphance-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2115F0CB4E00AB9E2F /* Apphance-iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		BDD6FA0C15F0BCF400AB9E2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDD6FA0E15F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helloWorldApphanceIntegrationTests.h; sourceTree = "<group>"; };
 		BDD6FA0F15F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloWorldApphanceIntegrationTests.m; sourceTree = "<group>"; };
+		BDD6FA2115F0CB4E00AB9E2F /* Apphance-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-iOS.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				BDD6F9DF15F0BCF400AB9E2F /* UIKit.framework in Frameworks */,
 				BDD6F9E115F0BCF400AB9E2F /* Foundation.framework in Frameworks */,
 				BDD6F9E315F0BCF400AB9E2F /* CoreGraphics.framework in Frameworks */,
+				BDD6FA2215F0CB4E00AB9E2F /* Apphance-iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +108,7 @@
 		BDD6F9DD15F0BCF400AB9E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDD6FA2115F0CB4E00AB9E2F /* Apphance-iOS.framework */,
 				BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */,
 				BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */,
 				BDD6F9E215F0BCF400AB9E2F /* CoreGraphics.framework */,
@@ -383,6 +387,10 @@
 		BDD6FA1415F0BCF400AB9E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloWorldApphanceIntegration/helloWorldApphanceIntegration-Prefix.pch";
 				INFOPLIST_FILE = "helloWorldApphanceIntegration/helloWorldApphanceIntegration-Info.plist";
@@ -394,6 +402,10 @@
 		BDD6FA1515F0BCF400AB9E2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloWorldApphanceIntegration/helloWorldApphanceIntegration-Prefix.pch";
 				INFOPLIST_FILE = "helloWorldApphanceIntegration/helloWorldApphanceIntegration-Info.plist";
@@ -455,6 +467,7 @@
 				BDD6FA1515F0BCF400AB9E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDD6FA1615F0BCF400AB9E2F /* Build configuration list for PBXNativeTarget "helloWorldApphanceIntegrationTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +476,7 @@
 				BDD6FA1815F0BCF400AB9E2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
