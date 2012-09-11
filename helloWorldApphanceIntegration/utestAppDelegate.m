@@ -18,10 +18,32 @@
         UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
         splitViewController.delegate = (id)navigationController.topViewController;
     }
+   
+    /*********************************************/
+    /* Very Important Details for Apphance Users */
+    /*********************************************/
+    // You must insert your Apphnace application key in the next line of code:
     
-    [APHLogger startNewSessionWithApplicationKey:@"9e1a09e590d85d60eaa1781c14ed297065a464ec" apphanceMode:kAPHApphanceModeQA];
+    [APHLogger startNewSessionWithApplicationKey:@"Your-Apphance-Application-Key-Goes-Here" apphanceMode:kAPHApphanceModeQA];
+    
+    // If you do not have an Apphance application key, you must first create a free account.
+    // Visit http://www.apphance.com for more information about how to create your account.
+    //
+    // If you already have an Apphance account, login to the Apphance control panel at: https://panel.apphance.com
+    // Create a new application (if you have not done so already).
+    // Your application key can be retrieved at any time from the "Settings" tab on the left menu.
+    
+    // The following line handles all uncaught exceptions and will send them to Apphance the next
+    // time the application starts. Add this line to enable crash reporting.
     
     NSSetUncaughtExceptionHandler(&APHUncaughtExceptionHandler);
+    
+    // For more Apphance help, visit http://help.apphance.com
+    
+    /***********************/
+    /* End Apphance Config */
+    /***********************/
+    
     return YES;
 }
 							
