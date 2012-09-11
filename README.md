@@ -52,7 +52,7 @@ This sample application includes several examples of Apphance's logging methods 
 
 ## Getting More Help
 
-For more information about using Apphance, visit our online [help topics](http://help.apphance.com). In particular, take a look at our instructions for configuring [Apphance with your iOS apps](https://help.apphance.com/library-installation/ios/).
+For more information about using Apphance, visit our online [help topics](http://help.apphance.com). In particular, take a look at our instructions for configuring [Apphance with your iOS apps](http://help.apphance.com/library-installation/ios/).
 
 If you need more help, email us at: [help@apphance.com](mailto:help@apphance.com)
 
