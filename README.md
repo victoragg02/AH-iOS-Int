@@ -28,7 +28,7 @@ Once you have downloaded the repository to your computer, navigate to the folder
 
 ### 6. Open the application delegate file
 
-Expand the project to see the included files and then expand the helloWorldApphanceIntegration folder. Open the utestAppDelegate.m file.
+Expand the project to see the included files and then expand the helloWorldApphanceIntegration folder. Click the utestAppDelegate.m file to open it.
 
 ### 7. Place your app key in the application delegate file
 
