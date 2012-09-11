@@ -24,7 +24,7 @@
     /**********************************/
     /* Configuration for for Apphance */
     /**********************************/
-    // You must insert your Apphnace application key in the next line of code:
+    // You must insert your Apphance application key in the next line of code:
     
     [APHLogger startNewSessionWithApplicationKey:@"Your-Apphance-Application-Key-Goes-Here" apphanceMode:kAPHApphanceModeQA];
     
@@ -41,6 +41,7 @@
     NSSetUncaughtExceptionHandler(&APHUncaughtExceptionHandler);
     
     // For more Apphance help, visit http://help.apphance.com
+    // For more help with Apphance on iOS, visit http://help.apphance.com/library-installation/ios/
     
     /***********************/
     /* End Apphance Config */
@@ -56,7 +57,7 @@
     // of several different ways to log from within your application.
     //
     // You can use logging tools like these from anywhere within your app. In this example application, these methods
-    // will write their log events when your app is staretd.
+    // will write their log events when your app is started.
     
     /* APHLog */
     // This is the standard AppHance logging method. It works very similarly to NSLog. (You can even use this method
@@ -83,6 +84,8 @@
     // Please see Supporting Files/utestLogObject.m for more details about how to enable object logging.
     utestLogObject *testObject = [[utestLogObject alloc] init];
     [testObject testMethod];
+    
+    // For more help with logging, visit http://help.apphance.com/library-installation/ios/logging
     
     /*********************************/
     /* End Apphance Logging Examples */
