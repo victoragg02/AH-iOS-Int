@@ -18,6 +18,8 @@
     
     // This method registers this object for logging with Apphance. Messages sent to this object will
     // also be sent to Apphance for debugging purposes.
+    //
+    // To see this in action, see the utestAppDelegate.m file.
     return [APHLogger registerObjectForLogging:self];
 }
 
