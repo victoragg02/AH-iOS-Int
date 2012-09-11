@@ -38,7 +38,7 @@ Locate a line that looks like:
 	[APHLogger startNewSessionWithApplicationKey:@"Your-Apphance-Application-Key-Goes-Here" apphanceMode:kAPHApphanceModeQA];
 </code>
 
-Replace *Your-Apphance-Application-Key-Goes-Here* with the application key from Step 3.
+Replace the string *Your-Apphance-Application-Key-Goes-Here* with the application key from Step 3.
 
 ### 8. Compile and run your app
 
