@@ -48,6 +48,8 @@ Click the Run button on the upper left hand corner of the screen. If everything 
 
 For more information about using Apphance, visit our online [help topics](http://help.apphance.com). In particular, take a look at our instructions for configuring [Apphance with your iOS apps](https://help.apphance.com/library-installation/ios/tutorial).
 
+If you need more help, email us at: [help@apphance.com](mailto:help@apphance.com)
+
 ## What is uTest Apphance?
 
 Apphance is a mobile app quality tool from uTest that enables mobile developers to know how their apps are working across a wide range of devices, carriers, OS versions and more. When combined with uTest's in-the-wild testing services, developers can ensure their apps work as expected in the lab and in the hands of end users. Learn more by visiting [apphance.com](http://www.apphance.com).
