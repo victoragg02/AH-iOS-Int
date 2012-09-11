@@ -44,17 +44,21 @@ Replace *Your-Apphance-Application-Key-Goes-Here* with the application key from 
 
 Click the Run button on the upper left hand corner of the screen. If everything is setup correctly, this very basic application should compile and load in a simulator.
 
+For more help, take a look at our online instructions for configuring [Apphance with your iOS apps](http://help.apphance.com/library-installation/ios/).
+
 ## Logging Examples
 
 Apphance allows you to manually log events to the Apphance server. This can be useful when you are debugging problems later because you can track custom defined activities from your application.
 
 This sample application includes several examples of Apphance's logging methods inside of utestAppDelegate.m, below the configuration steps listed above.
 
+For more help with logging iOS events with Apphance, visit our [help topics about logging](http://help.apphance.com/library-installation/ios/logging).
+
 ## Getting More Help
 
-For more information about using Apphance, visit our online [help topics](http://help.apphance.com). In particular, take a look at our instructions for configuring [Apphance with your iOS apps](http://help.apphance.com/library-installation/ios/).
+For more information about using Apphance, visit our online [help topics](http://help.apphance.com).  
 
-If you need more help, email us at: [help@apphance.com](mailto:help@apphance.com)
+If have additional questions, email us at: [help@apphance.com](mailto:help@apphance.com)
 
 ## What is uTest Apphance?
 
