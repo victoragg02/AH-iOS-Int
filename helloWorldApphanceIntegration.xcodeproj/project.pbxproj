@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		88BA6E2215FF944E00BC9FAD /* utestLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA6E2115FF944E00BC9FAD /* utestLogObject.m */; };
+		88BA6E2315FF944E00BC9FAD /* utestLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA6E2115FF944E00BC9FAD /* utestLogObject.m */; };
 		BDD6F9DF15F0BCF400AB9E2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */; };
 		BDD6F9E115F0BCF400AB9E2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */; };
 		BDD6F9E315F0BCF400AB9E2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E215F0BCF400AB9E2F /* CoreGraphics.framework */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		88BA6E2015FF944E00BC9FAD /* utestLogObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utestLogObject.h; sourceTree = "<group>"; };
+		88BA6E2115FF944E00BC9FAD /* utestLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utestLogObject.m; sourceTree = "<group>"; };
 		BDD6F9DA15F0BCF400AB9E2F /* helloWorldApphanceIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloWorldApphanceIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -153,6 +157,8 @@
 				BDD6F9F915F0BCF400AB9E2F /* utestDetailViewController.h */,
 				BDD6F9FA15F0BCF400AB9E2F /* utestDetailViewController.m */,
 				BDD6F9E515F0BCF400AB9E2F /* Supporting Files */,
+				88BA6E2015FF944E00BC9FAD /* utestLogObject.h */,
+				88BA6E2115FF944E00BC9FAD /* utestLogObject.m */,
 			);
 			path = helloWorldApphanceIntegration;
 			sourceTree = "<group>";
@@ -300,6 +306,7 @@
 				BDD6F9EF15F0BCF400AB9E2F /* utestAppDelegate.m in Sources */,
 				BDD6F9F815F0BCF400AB9E2F /* utestMasterViewController.m in Sources */,
 				BDD6F9FB15F0BCF400AB9E2F /* utestDetailViewController.m in Sources */,
+				88BA6E2215FF944E00BC9FAD /* utestLogObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDD6FA1015F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.m in Sources */,
+				88BA6E2315FF944E00BC9FAD /* utestLogObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

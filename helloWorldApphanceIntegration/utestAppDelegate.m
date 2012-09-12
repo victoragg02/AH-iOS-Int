@@ -8,6 +8,8 @@
 
 #import "utestAppDelegate.h"
 
+#import "utestLogObject.h"
+
 @implementation utestAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,10 +21,10 @@
         splitViewController.delegate = (id)navigationController.topViewController;
     }
    
-    /*********************************************/
-    /* Very Important Details for Apphance Users */
-    /*********************************************/
-    // You must insert your Apphnace application key in the next line of code:
+    /**********************************/
+    /* Configuration for for Apphance */
+    /**********************************/
+    // You must insert your Apphance application key in the next line of code:
     
     [APHLogger startNewSessionWithApplicationKey:@"Your-Apphance-Application-Key-Goes-Here" apphanceMode:kAPHApphanceModeQA];
     
@@ -39,11 +41,56 @@
     NSSetUncaughtExceptionHandler(&APHUncaughtExceptionHandler);
     
     // For more Apphance help, visit http://help.apphance.com
+    // For more help with Apphance on iOS, visit http://help.apphance.com/library-installation/ios/
     
     /***********************/
     /* End Apphance Config */
     /***********************/
     
+    /********************************/
+    /* Examples of Apphance Logging */
+    /********************************/
+
+    // The following lines are just examples - they are NOT necessary for configuration.
+    //
+    // Apphance allows you to log activities from within your application. The following lines of code are examples
+    // of several different ways to log from within your application.
+    //
+    // You can use logging tools like these from anywhere within your app. In this example application, these methods
+    // will write their log events when your app is started.
+    
+    /* APHLog */
+    // This is the standard AppHance logging method. It works very similarly to NSLog. (You can even use this method
+    // in place of NSLog - data sent to APHLog will still be logged to the console.)
+    APHLog(@"Example of APHLog", nil);
+    
+    // An example of the standard Apphance logging method with parameters.
+    APHLog(@"APHLog with a parameter: %@", @"demo parameter");
+    
+    /* APHExtendedLog */
+    // Apphance also features an extended logging method that supports log levels and tags. (You can even use this method
+    // in place of NSLog - data sent to APHExtendedLog will still be logged to the console.)
+    // Here's an example of the extended logging method with a warning log level and no tags.
+    APHExtendedLog(APHLogLevelWarning, nil, @"APHExtendedLog with a warning log level", nil);
+    
+    // Here's an example of the extended logging method with a verbose log level and a custom tag.
+    NSString *const tag = @"example_tag";
+    APHExtendedLog(APHLogLevelVerbose, tag, @"APHExtendedLog with a verbose log level and with tag: %@", tag);
+
+    /* Object Logging */
+    // Apphance can log messages received by objects. The following lines of code create a new
+    // object with object logging enabled and then call an example method.
+    //
+    // Please see Supporting Files/utestLogObject.m for more details about how to enable object logging.
+    utestLogObject *testObject = [[utestLogObject alloc] init];
+    [testObject testMethod];
+    
+    // For more help with logging, visit http://help.apphance.com/library-installation/ios/logging
+    
+    /*********************************/
+    /* End Apphance Logging Examples */
+    /*********************************/
+
     return YES;
 }
 							
