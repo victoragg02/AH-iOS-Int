@@ -24,13 +24,13 @@
 		BDD6FA0515F0BCF400AB9E2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */; };
 		BDD6FA0D15F0BCF400AB9E2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FA0B15F0BCF400AB9E2F /* InfoPlist.strings */; };
 		BDD6FA1015F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD6FA0F15F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.m */; };
-		BDD6FA2215F0CB4E00AB9E2F /* Apphance-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2115F0CB4E00AB9E2F /* Apphance-iOS.framework */; };
 		BDD6FA2515F0CDCC00AB9E2F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2415F0CDCC00AB9E2F /* QuartzCore.framework */; };
 		BDD6FA2715F0CDD100AB9E2F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2615F0CDD100AB9E2F /* AudioToolbox.framework */; };
 		BDD6FA2915F0CDD700AB9E2F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2815F0CDD700AB9E2F /* CoreLocation.framework */; };
 		BDD6FA2B15F0CDDF00AB9E2F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2A15F0CDDF00AB9E2F /* SystemConfiguration.framework */; };
 		BDD6FA2D15F0CDE700AB9E2F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2C15F0CDE700AB9E2F /* Security.framework */; };
 		BDD6FA2F15F0CDEB00AB9E2F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2E15F0CDEB00AB9E2F /* CoreTelephony.framework */; };
+		BE0378A61668E37F004ECF1F /* Apphance-Pre-Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0378A51668E37F004ECF1F /* Apphance-Pre-Production.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,13 +68,13 @@
 		BDD6FA0C15F0BCF400AB9E2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BDD6FA0E15F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = helloWorldApphanceIntegrationTests.h; sourceTree = "<group>"; };
 		BDD6FA0F15F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = helloWorldApphanceIntegrationTests.m; sourceTree = "<group>"; };
-		BDD6FA2115F0CB4E00AB9E2F /* Apphance-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-iOS.framework"; sourceTree = "<group>"; };
 		BDD6FA2415F0CDCC00AB9E2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BDD6FA2615F0CDD100AB9E2F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BDD6FA2815F0CDD700AB9E2F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BDD6FA2A15F0CDDF00AB9E2F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BDD6FA2C15F0CDE700AB9E2F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BDD6FA2E15F0CDEB00AB9E2F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BE0378A51668E37F004ECF1F /* Apphance-Pre-Production.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-Pre-Production.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 				BDD6F9DF15F0BCF400AB9E2F /* UIKit.framework in Frameworks */,
 				BDD6F9E115F0BCF400AB9E2F /* Foundation.framework in Frameworks */,
 				BDD6F9E315F0BCF400AB9E2F /* CoreGraphics.framework in Frameworks */,
-				BDD6FA2215F0CB4E00AB9E2F /* Apphance-iOS.framework in Frameworks */,
+				BE0378A61668E37F004ECF1F /* Apphance-Pre-Production.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,7 @@
 		BDD6F9DD15F0BCF400AB9E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDD6FA2115F0CB4E00AB9E2F /* Apphance-iOS.framework */,
+				BE0378A51668E37F004ECF1F /* Apphance-Pre-Production.framework */,
 				BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */,
 				BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */,
 				BDD6F9E215F0BCF400AB9E2F /* CoreGraphics.framework */,
