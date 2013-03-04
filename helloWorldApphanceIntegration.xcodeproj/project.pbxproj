@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		88BA6E2215FF944E00BC9FAD /* utestLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA6E2115FF944E00BC9FAD /* utestLogObject.m */; };
 		88BA6E2315FF944E00BC9FAD /* utestLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA6E2115FF944E00BC9FAD /* utestLogObject.m */; };
+		BD09768E16E4D3AF00A5D01E /* Apphance-Pre-Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD09768D16E4D3AF00A5D01E /* Apphance-Pre-Production.framework */; };
 		BDD6F9DF15F0BCF400AB9E2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */; };
 		BDD6F9E115F0BCF400AB9E2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */; };
 		BDD6F9E315F0BCF400AB9E2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E215F0BCF400AB9E2F /* CoreGraphics.framework */; };
@@ -30,7 +31,6 @@
 		BDD6FA2B15F0CDDF00AB9E2F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2A15F0CDDF00AB9E2F /* SystemConfiguration.framework */; };
 		BDD6FA2D15F0CDE700AB9E2F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2C15F0CDE700AB9E2F /* Security.framework */; };
 		BDD6FA2F15F0CDEB00AB9E2F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6FA2E15F0CDEB00AB9E2F /* CoreTelephony.framework */; };
-		BE0378A61668E37F004ECF1F /* Apphance-Pre-Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE0378A51668E37F004ECF1F /* Apphance-Pre-Production.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +46,7 @@
 /* Begin PBXFileReference section */
 		88BA6E2015FF944E00BC9FAD /* utestLogObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utestLogObject.h; sourceTree = "<group>"; };
 		88BA6E2115FF944E00BC9FAD /* utestLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utestLogObject.m; sourceTree = "<group>"; };
+		BD09768D16E4D3AF00A5D01E /* Apphance-Pre-Production.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-Pre-Production.framework"; sourceTree = "<group>"; };
 		BDD6F9DA15F0BCF400AB9E2F /* helloWorldApphanceIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloWorldApphanceIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,7 +75,6 @@
 		BDD6FA2A15F0CDDF00AB9E2F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BDD6FA2C15F0CDE700AB9E2F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BDD6FA2E15F0CDEB00AB9E2F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		BE0378A51668E37F004ECF1F /* Apphance-Pre-Production.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-Pre-Production.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 				BDD6F9DF15F0BCF400AB9E2F /* UIKit.framework in Frameworks */,
 				BDD6F9E115F0BCF400AB9E2F /* Foundation.framework in Frameworks */,
 				BDD6F9E315F0BCF400AB9E2F /* CoreGraphics.framework in Frameworks */,
-				BE0378A61668E37F004ECF1F /* Apphance-Pre-Production.framework in Frameworks */,
+				BD09768E16E4D3AF00A5D01E /* Apphance-Pre-Production.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +136,7 @@
 		BDD6F9DD15F0BCF400AB9E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE0378A51668E37F004ECF1F /* Apphance-Pre-Production.framework */,
+				BD09768D16E4D3AF00A5D01E /* Apphance-Pre-Production.framework */,
 				BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */,
 				BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */,
 				BDD6F9E215F0BCF400AB9E2F /* CoreGraphics.framework */,
