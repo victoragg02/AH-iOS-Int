@@ -11,6 +11,7 @@
 #import <UIKit/UIKit.h>
 #import "APHDefines.h"
 
+
 /**
 * Enum presenting possible logging level
 */
@@ -71,6 +72,22 @@ void APHUncaughtExceptionHandler(NSException *exception);
 }
 
 /** General setup methods **/
+
+/**
+* This will enable/disable shake gesture to report a problem.
+* Default it YES.
+* Be sure to call this before starting Apphance session otherwise it will have no effect.
+* @param shakeEnabled
+ */
++ (void)setReportOnShakeEnabled:(BOOL)shakeEnabled;
+
+/**
+* This will enable/disable double slide gesture to report a problem.
+* Default it NO.
+* Be sure to call this before starting Apphance session otherwise it will have no effect.
+* @param doubleSlideEnabled
+ */
++ (void)setReportOnDoubleSlideEnabled:(BOOL)doubleSlideEnabled;
 
 /**
 * This will override current application version name.
@@ -155,6 +172,7 @@ void APHUncaughtExceptionHandler(NSException *exception);
 + (void)sendFeedback:(NSString *)feedback;
 
 @end
+
 
 /**
 * Despite being called private, you can generally call these method, if you wish.
