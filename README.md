@@ -58,7 +58,7 @@ For more help with logging iOS events with Apphance, visit our [help topics abou
 
 For more information about using Apphance, visit our online [help topics](http://help.apphance.com).  
 
-If have additional questions, email us at: [help@apphance.com](mailto:help@apphance.com)
+If you have additional questions, email us at: [help@apphance.com](mailto:help@apphance.com)
 
 ## What is uTest Apphance?
 
