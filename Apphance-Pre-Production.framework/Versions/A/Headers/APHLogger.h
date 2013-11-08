@@ -1,7 +1,3 @@
-//
-//  Apphance-Pre-Production
-//
-//  Created by Piotr Wach, Paul Dudek, Pawel Janeczek on 10-01-25.
 //  Copyright 2013 uTest. All rights reserved.
 //
 //	This is the main logger file. Include it in your project
@@ -10,6 +6,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "APHDefines.h"
+#import "APHSettings.h"
 
 
 /**
@@ -62,7 +59,6 @@ void APHUncaughtExceptionHandler(NSException *exception);
 } while(0)
 
 
-//! Main apphance API class
 /**
 * Main apphance API class
 * @see https://help.apphance.com/library-installation/ios/tutorial
@@ -71,39 +67,24 @@ void APHUncaughtExceptionHandler(NSException *exception);
 
 }
 
-/** General setup methods **/
+/**
+* Default settings:
+* - applicationVersionName is equal to CFBundleShortVersionString
+* - applicationVersionCode is equal to CFBundleVersion
+* - apphanceMode is equal to APHSettingsModeQA
+* - reportOnShakeEnabled is equal to YES
+* - reportOnDoubleSlideEnabled is equal to NO
+* - withUTest is equal to NO
+* @return Apphance APHSettings object with default values. You can easily change apphance behaviour by simply changing it's properties.
+*/
++ (APHSettings *)defaultSettings;
 
 /**
-* This will enable/disable shake gesture to report a problem.
-* Default it YES.
-* Be sure to call this before starting Apphance session otherwise it will have no effect.
-* @param shakeEnabled
+* Starting APH session. Should be called once per application run - doing otherwise will result in an undefined behavior.
+* If you want to change default settings change properties for object [APHLogger defaultSettings].
+* @param applicationID Application ID that you can get from Apphance
  */
-+ (void)setReportOnShakeEnabled:(BOOL)shakeEnabled;
-
-/**
-* This will enable/disable double slide gesture to report a problem.
-* Default it NO.
-* Be sure to call this before starting Apphance session otherwise it will have no effect.
-* @param doubleSlideEnabled
- */
-+ (void)setReportOnDoubleSlideEnabled:(BOOL)doubleSlideEnabled;
-
-/**
-* This will override current application version name.
-* Default one is obtained by CFBundleShortVersionString.
-* Be sure to call this before starting Apphance session otherwise it will have no effect.
-* @param versionName Application version name
- */
-+ (void)setVersionName:(NSString *)versionName;
-
-/**
-* This will override current application version code.
-* Default one is obtained by CFBundleVersion.
-* Be sure to call this before starting Apphance session otherwise it will have no effect.
-* @param versionNumber Application version number
- */
-+ (void)setVersionNumber:(NSString *)versionNumber;
++ (void)startNewSessionWithApplicationKey:(NSString *)applicationId;
 
 /**
 * Logs exception. Screenshot will be included in the data sent to the server.
@@ -124,7 +105,19 @@ void APHUncaughtExceptionHandler(NSException *exception);
  */
 + (void)flush;
 
-/** Starting new session **/
+/**
+* This function manually shows report screen that is normally accessible by shaking device.
+*/
++ (void)showReportScreen;
+
+@end
+
+
+/**
+* Deprecated methods.
+* If you want to start session please use startNewSessionWithSettings.
+*/
+@interface APHLogger (DeprecatedMethods)
 
 /**
 * Starting APH session. Should be called once per application run - doing otherwise will result in an undefined behavior.
@@ -132,44 +125,52 @@ void APHUncaughtExceptionHandler(NSException *exception);
 * @param apphanceMode Apphance mode:kAPHApphanceModeQA, kAPHApphanceModeSilent
 * @param withUtest uTest enabled
  */
-+ (void)startNewSessionWithApplicationKey:(NSString *)applicationID apphanceMode:(NSString *)apphanceMode withUtest:(BOOL)withUtest;
++ (void)startNewSessionWithApplicationKey:(NSString *)applicationID apphanceMode:(NSString *)apphanceMode withUtest:(BOOL)withUtest __attribute__ ((deprecated));
 
 /**
 * uTest is disabled by default.
 * @see APHLogger#startNewSessionWithApplicationKey:apphanceMode:withUtest:
  */
-+ (void)startNewSessionWithApplicationKey:(NSString *)applicationID apphanceMode:(NSString *)apphanceMode;
++ (void)startNewSessionWithApplicationKey:(NSString *)applicationID apphanceMode:(NSString *)apphanceMode __attribute__ ((deprecated));
 
 /**
-* Default mode kAPHApphanceModeQA.
-* uTest is disabled by default.
-* @see APHLogger#startNewSessionWithApplicationKey:apphanceMode:withUtest:
+* This will enable/disable shake gesture to report a problem.
+* Default it YES.
+* Be sure to call this before starting Apphance session otherwise it will have no effect.
+* @param shakeEnabled
  */
-+ (void)startNewSessionWithApplicationKey:(NSString *)applicationID;
++ (void)setReportOnShakeEnabled:(BOOL)shakeEnabled __attribute__ ((deprecated));
 
 /**
-* Only available on Production library.
-* @see https://help.apphance.com/library-installation/ios/tutorial
-*/
-+ (void)feedback:(NSString *)title placeholder:(NSString *)placeholder;
+* This will enable/disable double slide gesture to report a problem.
+* Default it NO.
+* Be sure to call this before starting Apphance session otherwise it will have no effect.
+* @param doubleSlideEnabled
+ */
++ (void)setReportOnDoubleSlideEnabled:(BOOL)doubleSlideEnabled __attribute__ ((deprecated));
 
 /**
-* Only available on Production library.
-* @see https://help.apphance.com/library-installation/ios/tutorial
-*/
-+ (void)feedback:(NSString *)title;
+* This will override current application version name.
+* Default one is obtained by CFBundleShortVersionString.
+* Be sure to call this before starting Apphance session otherwise it will have no effect.
+* @param versionName Application version name
+ */
++ (void)setVersionName:(NSString *)versionName __attribute__ ((deprecated));
 
 /**
-* Only available on Production library.
-* @see https://help.apphance.com/library-installation/ios/tutorial
-*/
-+ (void)feedback;
+* This will override current application version code.
+* Default one is obtained by CFBundleVersion.
+* Be sure to call this before starting Apphance session otherwise it will have no effect.
+* @param versionNumber Application version number
+ */
++ (void)setVersionNumber:(NSString *)versionNumber __attribute__ ((deprecated));
 
 /**
-* Only available on Production library.
-* @see https://help.apphance.com/library-installation/ios/tutorial
-*/
-+ (void)sendFeedback:(NSString *)feedback;
+* This will set default user. With this set on there will be no login screen.
+* Be sure to call this before starting Apphance session otherwise it will have no effect.
+* @param defaultUser Default user mail
+ */
++ (void)setDefaultUser:(NSString *)defaultUser __attribute__ ((deprecated));
 
 @end
 
@@ -181,5 +182,22 @@ void APHUncaughtExceptionHandler(NSException *exception);
 @interface APHLogger (PrivateAccessors)
 
 + (void)logWithLevel:(APHLogLevel)level tag:(NSString *)tag line:(NSInteger)line fileName:(NSString *)fileName method:(NSString *)method stacktrace:(NSArray *)stacktrace format:(NSString *)format, ...;
+
+@end
+
+
+/**
+* Methods that are only available on Production library.
+* @see https://help.apphance.com/library-installation/ios/tutorial
+*/
+@interface APHLogger (ProductionLibraryMethods)
+
++ (void)feedback:(NSString *)title placeholder:(NSString *)placeholder;
+
++ (void)feedback:(NSString *)title;
+
++ (void)feedback;
+
++ (void)sendFeedback:(NSString *)feedback;
 
 @end

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DA2E31F182CE72E00496103 /* ApphancePreProduction.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DA2E31E182CE72E00496103 /* ApphancePreProduction.xcconfig */; };
+		1DA2E321182CE74D00496103 /* Apphance-Pre-Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA2E320182CE74D00496103 /* Apphance-Pre-Production.framework */; };
+		1DA2E323182CE81300496103 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA2E322182CE81300496103 /* AssetsLibrary.framework */; };
 		88BA6E2215FF944E00BC9FAD /* utestLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA6E2115FF944E00BC9FAD /* utestLogObject.m */; };
 		88BA6E2315FF944E00BC9FAD /* utestLogObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BA6E2115FF944E00BC9FAD /* utestLogObject.m */; };
-		BD09768E16E4D3AF00A5D01E /* Apphance-Pre-Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD09768D16E4D3AF00A5D01E /* Apphance-Pre-Production.framework */; };
 		BDD6F9DF15F0BCF400AB9E2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */; };
 		BDD6F9E115F0BCF400AB9E2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */; };
 		BDD6F9E315F0BCF400AB9E2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6F9E215F0BCF400AB9E2F /* CoreGraphics.framework */; };
@@ -44,9 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DA2E31E182CE72E00496103 /* ApphancePreProduction.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ApphancePreProduction.xcconfig; sourceTree = "<group>"; };
+		1DA2E320182CE74D00496103 /* Apphance-Pre-Production.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-Pre-Production.framework"; sourceTree = "<group>"; };
+		1DA2E322182CE81300496103 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		88BA6E2015FF944E00BC9FAD /* utestLogObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utestLogObject.h; sourceTree = "<group>"; };
 		88BA6E2115FF944E00BC9FAD /* utestLogObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = utestLogObject.m; sourceTree = "<group>"; };
-		BD09768D16E4D3AF00A5D01E /* Apphance-Pre-Production.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-Pre-Production.framework"; sourceTree = "<group>"; };
 		BDD6F9DA15F0BCF400AB9E2F /* helloWorldApphanceIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloWorldApphanceIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -82,7 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DA2E323182CE81300496103 /* AssetsLibrary.framework in Frameworks */,
 				BDD6FA2F15F0CDEB00AB9E2F /* CoreTelephony.framework in Frameworks */,
+				1DA2E321182CE74D00496103 /* Apphance-Pre-Production.framework in Frameworks */,
 				BDD6FA2D15F0CDE700AB9E2F /* Security.framework in Frameworks */,
 				BDD6FA2B15F0CDDF00AB9E2F /* SystemConfiguration.framework in Frameworks */,
 				BDD6FA2915F0CDD700AB9E2F /* CoreLocation.framework in Frameworks */,
@@ -91,7 +97,6 @@
 				BDD6F9DF15F0BCF400AB9E2F /* UIKit.framework in Frameworks */,
 				BDD6F9E115F0BCF400AB9E2F /* Foundation.framework in Frameworks */,
 				BDD6F9E315F0BCF400AB9E2F /* CoreGraphics.framework in Frameworks */,
-				BD09768E16E4D3AF00A5D01E /* Apphance-Pre-Production.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,12 +116,6 @@
 		BDD6F9CF15F0BCF400AB9E2F = {
 			isa = PBXGroup;
 			children = (
-				BDD6FA2E15F0CDEB00AB9E2F /* CoreTelephony.framework */,
-				BDD6FA2C15F0CDE700AB9E2F /* Security.framework */,
-				BDD6FA2A15F0CDDF00AB9E2F /* SystemConfiguration.framework */,
-				BDD6FA2815F0CDD700AB9E2F /* CoreLocation.framework */,
-				BDD6FA2615F0CDD100AB9E2F /* AudioToolbox.framework */,
-				BDD6FA2415F0CDCC00AB9E2F /* QuartzCore.framework */,
 				BDD6F9E415F0BCF400AB9E2F /* helloWorldApphanceIntegration */,
 				BDD6FA0815F0BCF400AB9E2F /* helloWorldApphanceIntegrationTests */,
 				BDD6F9DD15F0BCF400AB9E2F /* Frameworks */,
@@ -136,7 +135,14 @@
 		BDD6F9DD15F0BCF400AB9E2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD09768D16E4D3AF00A5D01E /* Apphance-Pre-Production.framework */,
+				1DA2E322182CE81300496103 /* AssetsLibrary.framework */,
+				BDD6FA2415F0CDCC00AB9E2F /* QuartzCore.framework */,
+				BDD6FA2615F0CDD100AB9E2F /* AudioToolbox.framework */,
+				BDD6FA2A15F0CDDF00AB9E2F /* SystemConfiguration.framework */,
+				BDD6FA2815F0CDD700AB9E2F /* CoreLocation.framework */,
+				BDD6FA2C15F0CDE700AB9E2F /* Security.framework */,
+				BDD6FA2E15F0CDEB00AB9E2F /* CoreTelephony.framework */,
+				1DA2E320182CE74D00496103 /* Apphance-Pre-Production.framework */,
 				BDD6F9DE15F0BCF400AB9E2F /* UIKit.framework */,
 				BDD6F9E015F0BCF400AB9E2F /* Foundation.framework */,
 				BDD6F9E215F0BCF400AB9E2F /* CoreGraphics.framework */,
@@ -166,6 +172,7 @@
 		BDD6F9E515F0BCF400AB9E2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1DA2E31E182CE72E00496103 /* ApphancePreProduction.xcconfig */,
 				BDD6F9E615F0BCF400AB9E2F /* helloWorldApphanceIntegration-Info.plist */,
 				BDD6F9E715F0BCF400AB9E2F /* InfoPlist.strings */,
 				BDD6F9EA15F0BCF400AB9E2F /* main.m */,
@@ -268,6 +275,7 @@
 				BDD6F9E915F0BCF400AB9E2F /* InfoPlist.strings in Resources */,
 				BDD6F9F215F0BCF400AB9E2F /* MainStoryboard_iPhone.storyboard in Resources */,
 				BDD6F9F515F0BCF400AB9E2F /* MainStoryboard_iPad.storyboard in Resources */,
+				1DA2E31F182CE72E00496103 /* ApphancePreProduction.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,10 +426,12 @@
 		};
 		BDD6FA1415F0BCF400AB9E2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA2E31E182CE72E00496103 /* ApphancePreProduction.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/paweljaneczek/Polidea/AH-iOS-Int",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloWorldApphanceIntegration/helloWorldApphanceIntegration-Prefix.pch";
@@ -437,10 +447,12 @@
 		};
 		BDD6FA1515F0BCF400AB9E2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DA2E31E182CE72E00496103 /* ApphancePreProduction.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"/Users/paweljaneczek/Polidea/AH-iOS-Int",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "helloWorldApphanceIntegration/helloWorldApphanceIntegration-Prefix.pch";

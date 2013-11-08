@@ -1,0 +1,4 @@
+OTHER_LDFLAGS=$(inherited) -force_load $(APH_FRAMEWORK_PATH)/Apphance-Pre-Production.framework/Apphance-Pre-Production -framework QuartzCore -framework AudioToolbox -framework CoreLocation -framework SystemConfiguration -framework Security -framework UIKit -framework AssetsLibrary -framework CoreTelephony
+FRAMEWORK_SEARCH_PATHS=$(inherited) $(APH_FRAMEWORK_PATH)
+GCC_PREPROCESSOR_DEFINITIONS=$(inherited) APH_ENABLED=1 APH_PRE_PRODUCTION=1
+APH_FRAMEWORK_PATH=$(SRCROOT)

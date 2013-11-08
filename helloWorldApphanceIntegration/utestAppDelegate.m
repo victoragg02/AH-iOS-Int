@@ -26,11 +26,10 @@
     /**********************************/
     
     // Preferable bug report trigger can be set before starting Apphance session
-    [APHLogger setReportOnShakeEnabled:true]; // true by default
-    [APHLogger setReportOnDoubleSlideEnabled:true]; //false by default
+    [APHLogger.defaultSettings setReportOnShakeEnabled:YES]; // YES by default
 
     // You must insert your Apphance application key in the next line of code:
-    [APHLogger startNewSessionWithApplicationKey:@"Your-Apphance-Application-Key-Goes-Here" apphanceMode:kAPHApphanceModeQA];
+    [APHLogger startNewSessionWithApplicationKey:@"Your-Apphance-Application-Key-Goes-Here"];
     
     // If you do not have an Apphance application key, you must first create a free account.
     // Visit http://www.apphance.com for more information about how to create your account.
